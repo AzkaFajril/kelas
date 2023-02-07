@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
-
 body {
     font-family: "Secular One", sans-serif;
     background-color: rgb(95, 100, 115);
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 html {
     scroll-behavior: smooth;
 }
+
 
 /* navbar */
 
@@ -42,7 +42,6 @@ html {
 .jumbotron .container {
     margin-top: 100px;
 }
-
 
 .jumbotron {
     background-image: url("img/bg.png");
@@ -81,6 +80,7 @@ html {
     margin-top: 10%;
 }
 
+
 /* Glow Moment */
 
 .glow-on-hover {
@@ -101,7 +101,7 @@ html {
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
     top: -2px;
-    left:-2px;
+    left: -2px;
     background-size: 400%;
     z-index: -1;
     filter: blur(5px);
@@ -138,10 +138,17 @@ html {
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
 }
+
 
 /* about */
 
@@ -161,6 +168,7 @@ html {
     border-radius: 7px;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
+
 
 /* Contact person */
 
@@ -221,6 +229,7 @@ html {
 
 
 /* Jadwalmapel Page */
+
 .jadwal .container {
     margin-top: 50px;
     width: 70%;
@@ -240,12 +249,11 @@ html {
 
 
 /* for mobile */
-@media only screen and (max-width: 1000px) {
 
+@media only screen and (max-width: 1000px) {
     .nav-item a:hover {
         border-bottom: none;
     }
-
     .jumbotron {
         height: 680px;
         text-align: center;
@@ -253,47 +261,39 @@ html {
         background-position: top;
         background-repeat: no-repeat;
     }
-
     .jumbotron img {
         display: none;
     }
-
     .jumbotron h1 {
         font-size: 47px;
         margin-top: -40px;
         border-bottom: none;
     }
-
     .jumbotron p {
         opacity: 0.5;
     }
-
     .content-recoment {
         width: auto;
     }
-
     .contact .container-fluid {
         height: auto;
     }
-
     .content-recoment .btn {
         float: right;
         position: fixed;
     }
-
     .jadwal .container {
         margin-top: 20px;
         width: auto;
     }
-
     .footer .container .bi {
         margin-top: 20px;
     }
-
     .glow-on-hover {
         width: 150px;
     }
 }
+
 
 /* for tablet */
 
@@ -301,8 +301,8 @@ html {
 /* CSS JADWAL PELAJARAN */
 
 
-
 /* Footer */
+
 footer {
     background-color: #474A59;
     color: #F6F2FF;
@@ -318,7 +318,8 @@ footer a {
 
 footer .bi-instagram,
 .bi-whatsapp,
-.bi-github {
+.bi-github,
+.bi-google {
     display: flex;
     justify-content: right;
     color: white;
@@ -328,7 +329,9 @@ footer a:hover {
     color: rgb(211, 211, 211);
 }
 
+
 /* Gallery CSS */
+
 .column {
     flex: 25%;
     max-width: 25%;
@@ -346,20 +349,20 @@ footer a:hover {
 
 @media screen and (max-width: 800px) {
     .column {
-      flex: 50%;
-      max-width: 50%;
+        flex: 50%;
+        max-width: 50%;
     }
-  }
+}
 
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .column {
-      flex: 100%;
-      max-width: 50%;
+        flex: 100%;
+        max-width: 50%;
     }
-      .glow-on-hover {
+    .glow-on-hover {
         width: 100px;
-      }
-  }
+    }
+}
 
 .banner {
     width: 100%;
